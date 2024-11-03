@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#section-1">Home</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="#section-3">Projects</a>
+          <a class="nav-item nav-link" href="#section-4">Contact</a>
+          <!--<a class="nav-item nav-link" href="/public/home.html">Blog</a>-->
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section
+      class="section-1 d-flex align-items-center justify-content-center flex-column text-center bg-dark text-white vh-100"
+      style="background-image: url('images/computer_vision.jpeg'); background-size: cover;">
+      <h1 class="display-4 font-weight-bold">WANNABLE MLE</h1>
+
+      <a href="#section-3" class="btn btn-outline-light mt-3">Projects</a>
+    </section>
+
+    <!-- Section 2 (About Me) -->
+    <section class="section-2 py-5">
+      <div class="container">
+        <h2 class="section-heading text-center mb-5">About Me</h2>
+        <div class="row">
+          <div class="col-md-3 text-center mb-3">
+            <i class="far fa-lightbulb fa-5x"></i>
+            <h3 class="mt-3">Creative</h3>
+          </div>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-cut fa-5x"></i>
+            <h3 class="mt-3">Problem Solving</h3>
+          </div>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-tachometer-alt fa-5x"></i>
+            <h3 class="mt-3">Actually Read Docs</h3>
+          </div>
+          <div class="col-md-3 text-center mb-3">
+            <i class="fas fa-rocket fa-5x"></i>
+            <h3 class="mt-3">Dynamic</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Simplified for brevity -->
+    <!-- Section 3 -->
+    <section class="section-3" id="section-3">
+      <h1 class="section-heading section-3-heading">My Projects</h1>
+
+      <!-- Filter Buttons -->
+      <div class="text-center mb-5">
+        <button class="btn btn-secondary filter-btn active" data-category="all">All</button>   
+        <button class="btn btn-secondary filter-btn" data-category="web_ai">Jupyter Notebooks</button>     
+    <!--   <button class="btn btn-secondary filter-btn" data-category="other">Others</button>--> 
+      </div>
+      <!-- Cards Section -->
+      <div class="cards-wrapper">
+        <!-- Card 1 -->
+        <div class="card project embedded_desktop_dev">
+          <img src="images/fk.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">E-commerce warehouse inventory management system</h3>
+            <p class="course-description">Python/VLM/C++</p>
+
+            <p class="project-description">
+                This system is designed to manage warehouse inventory for e-commerce efficiently. It leverages Python and C++ for backend processing and VLM for visual identification of inventory items. Key features include real-time stock updates, seamless integration with e-commerce platforms, and improved tracking from storage to shipment.
+            </p>
+  
+
+            <a href="https://github.com/muhd360/SYSTEM"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+         <div class="card project embedded_desktop_dev">
+          <img src="images/meta.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Meta AI smart glasses recreation/h3>
+            <p class="course-description">Tensorflow/raspi/gpt</p>
+            <p class="project-description">Created low-cost smart glasses with advanced AI integration, featuring TensorFlow for real-time obstacle detection
+                and Vosk for voice activation.Incorporated GPT-4 API for intelligent assistance and Gemini Speech-to-Text for natural language interaction</p>
+
+            <a href="https://github.com/huntingcodes-001/blind-assist"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+        <div class="card project embedded_desktop_dev">
+          <img src="images/sih.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Low cost smartboard</h3>
+            <p class="course-description">Esp32/Mpu 6050/Js</p>
+            <p class="project-description">A low cost smartboard alternative that uses an IR touchrame complete with software additions such as a knowledge graph,pdf to notes,auto transcript generation,Audio features proccessing and many more.Contact -9892977581 to purchase.</p>
+
+            <a href="https://github.com/AishwaryaRavi07/Team-Osmium-915"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+        <div class="card project embedded_desktop_dev">
+          <img src="images/kms.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">GUI for robotics </h3>
+            <p class="course-description">QT / ROS2 / Python</p>
+            <p class="project-description">Developed a GUI for robotics that integrates with ROS2 and Python. The system is designed to control and monitor robotic systems, with features such as real-time data visualization, remote control, and task scheduling. The GUI is user-friendly and can be customized to suit different robotic applications.</p>
+
+            <a href="https://github.com/muhd360/ROS_GUI"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+          
+        <div class="card project embedded_desktop_dev">
+          <img src="images/loan.png" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">>Loan status application</h3>
+            <p class="course-description">Flask/Python</p>
+            <p class="project-description">End to end machine learning project inspired by Krish naik.Taught me a lot about how open source projects are structured and how can we make projects such that minimal changes are required to try out different models.Check 2 see if ure eligible for a loan based on 13 factors</p>
+
+            <a href="https://github.com/muhd360/Loan-status"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+        
+        
+        
+
+        <div class="card project deep_learning">
+          <img src="images/sats.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Satelite images Deeplearning</h3>
+            <p class="course-description">Docker / Deeplearning</p>
+            <p class="project-description">Developed a deep learning model to analyze satellite images for land cover classification. The model uses TensorFlow and Docker for efficient processing and deployment. Key features include real-time image processing, accurate classification, and seamless integration with satellite data sources.</p>
+
+            <a href="https://github.com/muhd360/Satelite-deeplearning"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+       
+        <div class="card project deep_learning">
+          <img src="images/yolo.png" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Web app</h3>
+            <p class="course-description">Pytorch/python/js </p>
+            <p class="project-description">Inferences for images using yolov4 through a web-app </p>
+
+            <a href="https://github.com/muhd360/YOLOV4-WEB-APP"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+
+        <div class="card project openCV_robotics">
+          <img src="images/pushup.png" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Exercise tracker</h3>
+            <p class="course-description"> js</p>
+            <p class="project-description">What better way to learn a framework?Presenting a pushup counter using ml5js and a bit of maths.Exercise away!!!!</p>
+            <a href="https://github.com/muhd360/pushup-counter" class="btn btn-primary project-link"
+              target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+          <div class="card project web_ai">
+          <img src="images/tfl.png" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Simple easy guide 2 convert any model to tf-lite stress free.</h3>
+            <p class="course-description">Easy 2 understand and one stop solution authored by me UwU</p>
+
+            <a
+            href="https://colab.research.google.com/drive/1mdCeY5uI3ihyOZFDW7AgQ3HWRZJTwHR7?usp=sharing"
+            class="btn btn-primary project-link"
+            target="_blank"
+            
+      >Source Code</a
+          >
+          </div>
+        </div>        
+         <div class="card project web_ai">
+          <img src="images/stonks.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">Dabbling in the markets</h3>
+            <p class="course-description">Work related to my internship simple LSTM implementation 3 layer.</p>
+
+            <a href="https://colab.research.google.com/drive/1Yug_WLqRDqSB9GfVhoUtdJSiZMDuvh41?usp=sharing"
+              class="btn btn-primary project-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+        
+        
+       <div class="card project web_ai">
+          <img src="images/rag.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">RAG w/h pinecone</h3>
+            <p class="course-description">Personal financial assistant for my internship ask any question to any pdf anytime.</p>
+
+            <a
+            href="https://colab.research.google.com/drive/1sv0Y-zsrENqtS5UXOJxK-rDCFWQoPYCi?usp=sharing"
+            class="btn btn-primary project-link"
+            target="_blank"
+        
+            >Source Code</a
+          >
+          </div>
+        </div>
+        
+        <div class="card project web_ai">
+          <img src="images/bert.jpeg" alt="Course Image">
+          <div class="card-body">
+
+            <h3 class="course-title">BERT LLORA Finetuning</h3>
+            <p class="course-description">Finetuning bert using llora simple 2 understand</p>
+            <a
+            href="https://colab.research.google.com/drive/15H1xNAUntYZ6FGrPTq5zIrWQO5tOptb8?usp=sharing"
+            class="btn btn-primary project-link"
+            target="_blank"
+        
+            >Source Code</a
+          >
+          </div>
+        </div>
+
+        <!-- Repeat for other cards -->
+      </div>
+      
+    
+
+
+      <div class="projects-wrapper center">
+      </div>
+
+    </section>
+    <!-- End of Section 3 -->
+    <!-- Contact Section -->
+    <!-- Simplified for brevity -->
+    <!-- Section 4 -->
+    <section class="section-4" id="section-4">
+      <h1 class="section-heading section-4-heading">Contact Me</h1>
+      <form action="https://formsubmit.co/damianpatriot41@gmail.com" method="post" class="contact-form center">
+        <input name="name" type="text" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Clients Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="submit" value="Send" class="contact-form-btn" />
+      </form>
+    </section>
+    <!-- End of Section 4 -->
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 text-center footer">
+
+        <p>
+          Copyright &copy; CodeAndCreate. Inspired by Fikrat gasimov
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap and jQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
